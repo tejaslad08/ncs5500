@@ -200,7 +200,7 @@ Scale numbers for v4 will not be affected by the timer values
 |-----------------------------|---------------------------------|-----------------------------|-------------------------------------|
 | Single Hop                  | 1. 4/5/6/7 ms<br>2. 8ms & above | 3ms                         | 1. 150<br>2. 250                    |
 | BOB (BFD o/ Bundle Members) | 1. 4/5/6/7 ms<br>2. 8ms & above | 3ms                         | 1. 150<br>2. 250                    |
-| BLB (BFD o/ Logical bundle) | 50 ms                           | 3ms                         | 250                                 |
+| BLB (BFD o/ Logical bundle) | 300 ms                           | 3ms                         | 250                                 |
 | MHOP                        | 50 ms                           | 3ms                         | 250                                 |
 
 Note:
