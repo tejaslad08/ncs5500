@@ -1,7 +1,7 @@
 ---
 published: true
 date: '2021-04-19 14:04 +0530'
-title: BFD Architecture on NCS55xx and NCS5xx
+title: BFD Architecture on NCS5500 and NCS500
 author: Tejas Lad
 excerpt: Implementation of BFD on NCS5500 and NCS500
 tags:
