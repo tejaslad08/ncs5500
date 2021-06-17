@@ -36,12 +36,22 @@ Just a quick backgroun before we move. Link Bundle or Bundle Ethernet has been i
 ## Why do we need BFD over Bundle - BoB ?
 
 As we know, LACP allows a network device to negotiate an automatic bundling of links by sending LACP packets to their directly connected peer. LACP has keep-alive mechanism for link member. The default being 30s and it can be configurable to around 1s. Link Aggregation Control Protocol can
-detect failures on a per-physical-member link. However the LACP timers do not fulfill the criteria of today's fast convergence requirements. Therefore using BFD for failure detection would([RFC 7130](https://datatracker.ietf.org/doc/html/rfc7130)):   
+detect failures on a per-physical-member link. However the LACP timers do not fulfill the criteria of today's fast convergence requirements. Therefore using BFD for failure detection would([RFC 7130](https://datatracker.ietf.org/doc/html/rfc7130)): 
+
   - Provide a faster detection
   - Provide detection in the absence of LACP
   - Would be able to verify the ability for each member link to be able to forward L3 packets.
 
 Running a single BFD session over the aggregation without internal knowledge of the member links would make it impossible for BFD to guarantee detection of the physical member link failures. The goal is to verify link Continuity for every member link.
+
+
+## BFD over Bundle - BoB on NCS5500 and NCS500 
+
+BoB implementation on NCS5500 and NCS500 is a standard based fast failure detection of link aggregation (LAG) memberlinks that is interoperable between different platforms. BoB on a per bundle basis supports only IETF standard per bundle. For BFD over Bundle, the BFD client is **bundlemgr**. Hence if BFD session goes down, bundlemgr will bring down the bundle if it violates the minimum link criteria. 
+
+## Configuring a BFD session over a Bundle Interface
+
+
 
 
 
