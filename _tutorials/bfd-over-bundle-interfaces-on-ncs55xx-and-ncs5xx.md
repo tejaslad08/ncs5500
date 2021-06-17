@@ -13,7 +13,7 @@ tags:
   - Bundle Ethernet
   - BoB
   - BLB
-position: hidden
+position: top
 ---
 {% include toc icon="table" title="BFD over Bundle Interfaces on NCS55xx and NCS5xx" %} 
 
