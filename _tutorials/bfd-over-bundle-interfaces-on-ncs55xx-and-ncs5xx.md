@@ -13,7 +13,7 @@ tags:
   - Bundle Ethernet
   - BoB
   - BLB
-position: hidden
+position: top
 ---
 {% include toc icon="table" title="BFD over Bundle Interfaces on NCS55xx and NCS5xx" %} 
 
@@ -50,9 +50,3 @@ Running a single BFD session over the aggregation without internal knowledge of 
 BoB implementation on NCS5500 and NCS500 is a standard based fast failure detection of link aggregation (LAG) memberlinks that is interoperable between different platforms. There are 2 modes available. Cisco and IETF. NCS5500 and NCS540 only supports the IETF mode. For BFD over Bundle, the BFD client is **bundlemgr**. Hence if BFD session goes down, bundlemgr will bring down the bundle if it violates the minimum link criteria. 
 
 ## Configuring a BFD session over a Bundle Interface
-
-
-
-
-
-
